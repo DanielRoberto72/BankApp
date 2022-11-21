@@ -29,7 +29,6 @@ function auth(req, res,next){
 
 const router = Router()
 
-
 router.post('/api/surf/v1/auth',CadastrosController.findOneUser)
 router.post('/api/surf/v1/cadastrar',auth,CadastrosController.createOneUser)
 router.put('/api/surf/v1/atualizar/:id',auth,CadastrosController.updateOneUser)
